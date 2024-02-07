@@ -1,0 +1,180 @@
+
+#results {
+        
+    padding: 0;
+    margin: 10px;
+    list-style: none; 
+}
+
+#results ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+   grid-gap: 5px;
+}
+#results li {
+    border: 1px solid #678D72;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    padding: 1px;
+    border-radius: 5%;
+    background-color: #f3ffe7;
+    overflow: hidden;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    }
+
+#search {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #997979;
+    transition: border-color 0.3s;
+}
+
+#search:focus {
+    border-color: #ff9900; 
+}
+
+#results img {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: auto;
+    border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+    #results ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 100px; 
+    }
+}
+
+#results li:hover {
+    transform: scale(1.05); 
+    border-color: black; 
+}
+
+main {
+  
+    margin: 3%;
+   /* padding: 2rem;*/
+    background-color: #678D72; /* Arrière-plan blanc */
+    border-radius: 20px; /* Coins arrondis pour rappeler la douceur de la nature */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    
+ 
+}
+
+/* Ajoutez ces styles pour les marges de gauche et de droite */
+.left-menu, .right-menu {
+    margin-top: 0%;
+    
+        background-color: #F5F5DC;
+        border-radius: 10px;
+        
+        margin-bottom: auto;
+}
+/* Ajoutez d'autres styles selon vos besoins */
+.left-menu {
+float: left;
+width: 18%; /* Ajustez la largeur selon vos besoins */
+}
+
+.right-menu {
+float: right;
+width: 15%; /* Ajustez la largeur selon vos besoins */
+}
+
+.left-menu ul, .right-menu ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-menu li, .right-menu li {
+    margin-bottom: 10px;
+}
+
+h2{
+    color:#43b162;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    #actions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+p,
+label {
+ 
+    margin-left: 1px;
+    font-family: Arial, sans-serif; /* Remplacez "Arial" par la police de votre choix */
+    /*border: 2px solid ; /* Couleur et style de la bordure */
+    padding: 3px; /* Ajoutez un peu de marge intérieure pour l'esthétique */
+    border-radius: 3px; /* Coins arrondis de la bordure */
+    display: inline-block; /* Permet aux éléments d'occuper seulement la largeur dont ils ont besoin */
+    margin-bottom: 10px; /* Ajoute un espace entre chaque élément du filtre */
+    COLOR : black;
+    font-weight: bold;  
+}
+
+
+input {
+  margin: 0.4rem;
+}
+
+#search-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#search-input {
+    
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    background-color:#F5F5DC;  
+}
+.filter-checkbox {
+    margin-left: 10px;
+    font-family: Arial, sans-serif; /* Remplacez "Arial" par la police de votre choix */
+    border: 1px solid #ccc; /* Couleur et style de la bordure */
+    padding: 5px; /* Ajoutez un peu de marge intérieure pour l'esthétique */
+    border-radius: 5px; /* Coins arrondis de la bordure */
+    display: inline-block; /* Permet aux éléments d'occuper seulement la largeur dont ils ont besoin */
+    margin-bottom: 5px; /* Ajoute un espace entre chaque élément du filtre */
+    background-color: #43b162;
+}
+
+form {
+border: 1px solid;
+border-bottom-width :20%;
+margin-left: 10%;
+margin-right: 10%;
+border-radius: 8px;
+background-color: #F8F8FF;
+
+
+
+}
+

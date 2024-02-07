@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  display: flex;
+  justify-content:left;
+  flex-direction: columns;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F7F2;
+}
+
+.image {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    top : 0;
+    bottom: 0%;
+    padding: 200px;
+    background-color: #678D72;
+    text-align: center;
+    
+    
+}
+
+form {
+  position: fixed;
+  margin-top: 150px;
+  background-color: #fff;
+  padding: 40px 100px;
+  border-radius: 10px;
+  min-width: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5);
+  margin-left: 200px;
+  bottom: 30%;
+  transform: translateY(-500%);
+  transition: transform 1s ease-in-out;  
+  
+}
+
+
+
+form h1{
+  color: #678D72;
+  text-align:center;
+}
+
+form .inputs {
+  display: flex;
+  flex-direction: column;
+}
+form .inputs input[type='email'], input[type='password']{
+  padding: 15px;
+  border:none;
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  outline:none;
+  margin-bottom: 15px;
+}
+form p.inscription{
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+}
+form p.inscription span{
+  color:#678D72;
+  
+}
+form a.mdp{
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+  text-align: center;
+  text-decoration: none;
+}
+
+form button{
+  padding: 15px 25px;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #678D72;
+  outline:none;
+  cursor:pointer;
+}
+
+.message h2{
+  font-family: 'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+  font-size: 45px;
+  font-style: italic;
+  font-weight: normal;
+  color:white;
+
+}
+.message .bienvenue{
+
+  color : white;
+  font-family:'Winter Soldier';
+  font-size: 30px;
+  font-style: italic;
+  left: 50px;
+  max-width: 500px;
+  justify-content: center;
+  
+  
+}
+    
+
+.message {
+    padding: 3px 10px;
+    border: double;
+    border-color: black;
+    width: 400px;
+    justify-content: center;
+    margin-left: -50%;
+    margin-top: -20%;
+    color:#fff;
+    font-size: 30px;
+    transform: translateY(-500%);
+    transition: transform 1s ease-in-out;  
+}
+
+.accueil{
+  margin-top: -30%;
+  margin-right: -10%;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #678D72;
+  outline:none;
+  cursor:pointer;
+}
+
+.accueil::before {
+  content: "\2302";
+  margin-right: 5px; 
+}
+
+.logo-text {
+  color:rgb(61, 130, 42);
+  font-size: 30px;
+  font-style: italic;
+
+}
+
+

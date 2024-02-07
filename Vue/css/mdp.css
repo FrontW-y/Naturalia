@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Hailey';
+    src: url('./hailey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+}
+
+form {
+    position: relative;
+    margin-top: 100px;
+    background-color: #678D72;
+    padding: 40px 100px;
+    border-radius: 10px;
+    min-width: 300px;
+    margin-left: 350px;
+    margin-right: 350px;
+    border: 2px solid;
+}
+
+form h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 30PX;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+   
+}
+
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs input[type='email'] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+form a.mdp {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+form button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #205732;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.mdp {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+form .description {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}

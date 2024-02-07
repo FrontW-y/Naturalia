@@ -1,0 +1,456 @@
+
+
+#results {
+        
+    padding: 0;
+    margin: 10px;
+    list-style: none; 
+}
+
+#results ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+   grid-gap: 5px;
+}
+#results li {
+    border: 1px solid #678D72;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    padding: 1px;
+    border-radius: 5%;
+    background-color: #f3ffe7;
+    overflow: hidden;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    }
+
+#search {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #997979;
+    transition: border-color 0.3s;
+}
+
+#search:focus {
+    border-color: #ff9900; 
+}
+
+#results img {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: auto;
+    border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+    #results ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 100px; 
+    }
+}
+
+#results li:hover {
+    transform: scale(1.05); 
+    border-color: black; 
+}
+
+.corps {
+  
+    margin: 3%;
+   /* padding: 2rem;*/
+    background-color: #678D72; /* Arrière-plan blanc */
+    border-radius: 20px; /* Coins arrondis pour rappeler la douceur de la nature */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    
+ 
+}
+
+/* Ajoutez ces styles pour les marges de gauche et de droite */
+.left-menu, .right-menu {
+    margin-top: 0%;
+    
+        background-color: #F5F5DC;
+        border-radius: 10px;
+        
+        margin-bottom: auto;
+}
+/* Ajoutez d'autres styles selon vos besoins */
+.left-menu {
+float: left;
+width: 18%; /* Ajustez la largeur selon vos besoins */
+}
+
+.right-menu {
+float: right;
+width: 15%; /* Ajustez la largeur selon vos besoins */
+}
+
+.left-menu ul, .right-menu ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left-menu li, .right-menu li {
+    margin-bottom: 10px;
+}
+
+h2{
+    color:#43b162;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    #actions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+p,
+label {
+ 
+    margin-left: 1px;
+    font-family: Arial, sans-serif; /* Remplacez "Arial" par la police de votre choix */
+    /*border: 2px solid ; /* Couleur et style de la bordure */
+    padding: 3px; /* Ajoutez un peu de marge intérieure pour l'esthétique */
+    border-radius: 3px; /* Coins arrondis de la bordure */
+    display: inline-block; /* Permet aux éléments d'occuper seulement la largeur dont ils ont besoin */
+    margin-bottom: 10px; /* Ajoute un espace entre chaque élément du filtre */
+    COLOR : black;
+    font-weight: bold;  
+}
+
+
+input {
+  margin: 0.4rem;
+}
+
+#search-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#search-input {
+    
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    background-color:#F5F5DC;  
+}
+.filter-checkbox {
+    margin-left: 10px;
+    font-family: Arial, sans-serif; /* Remplacez "Arial" par la police de votre choix */
+    border: 1px solid #ccc; /* Couleur et style de la bordure */
+    padding: 5px; /* Ajoutez un peu de marge intérieure pour l'esthétique */
+    border-radius: 5px; /* Coins arrondis de la bordure */
+    display: inline-block; /* Permet aux éléments d'occuper seulement la largeur dont ils ont besoin */
+    margin-bottom: 5px; /* Ajoute un espace entre chaque élément du filtre */
+    background-color: #43b162;
+}
+
+form {
+border: 1px solid;
+border-bottom-width :20%;
+margin-left: 10%;
+margin-right: 10%;
+border-radius: 8px;
+background-color: #F8F8FF;
+
+}
+
+/*details*/
+/* Style pour la liste détaillée */
+ul.details {
+    list-style-type: none;
+    margin: 20px auto; /* Centre la liste sur la page avec une marge automatique */
+    background-color: #F8FAEE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 95%; /* Limite la largeur maximale pour une meilleure lisibilité sur les grands écrans */
+    overflow: hidden; /* Clearfix pour contenir les éléments flottants */
+    text-align: center; /* Centrer le texte dans la liste */
+    width: 100%;
+    height: 100%;
+}
+
+/* Style pour les éléments de la liste détaillée */
+.info {
+
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    list-style-type: square;
+    margin-top: 1px;
+    /* justify-content: left; */
+    display: inline-grid;
+    align-items: baseline;
+    justify-content: left;
+    margin-right: 20%;
+  
+}
+  
+   
+
+.info-container {
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: space-around; /* Espace les éléments horizontalement */
+    height: 100%;
+    width: 100%;
+
+}
+
+.info-container {
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: space-around; /* Espace les éléments horizontalement */
+    height: 50%;
+    width: 50%;
+    margin-right: 20px; /* Ajoute une marge à droite du conteneur */
+    background-color: #f3ffe7; /* Couleur de fond */
+    /*border: 1px solid black; /* Bordure */
+    border-radius: 20px; /* Coins arrondis */
+    box-shadow: 0 5px 9px rgba(19, 75, 3, 0.1); /* Ombre */
+    padding: 10px; /* Marge intérieure */
+    border-bottom: 2px;
+    margin-left: 2px;
+    margin-top: 80PX;
+}
+/* Style pour chaque élément de la liste détaillée */
+.info li {
+
+   
+    margin-bottom: 10px;
+    white-space: nowrap;
+    margin-right: 15px;
+    /* display: inline-flex; */
+    /* justify-content: left; */
+    display: list-item;
+    text-align: left;
+}
+.info-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* Style pour la séparation entre le titre et la liste */
+.info-divider {
+    height: 1px;
+    background-color: #0d6905;
+    margin-bottom: 10px;
+}
+/* Style pour les images dans la liste détaillée */
+li.image {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80PX;
+}
+
+/* Style pour les images dans la liste détaillée */
+li.image img {
+    max-width: 100%;
+    max-height: 230px;
+    border-radius: 7px;
+}
+
+/* Style spécifique pour le nom français */
+ul.details li.french-name {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    order: -1;
+    margin-top: 20px; /* Ajustement de la marge pour le titre */
+    width: 50%;
+    height: 50%;
+    color: black    ;
+}
+
+/* Style pour le texte supplémentaire sous le titre */
+.additional-text {
+    clear: both; /* Clear the float to ensure proper spacing below the image */
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #F8FAEE;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    max-width: 95%;
+    
+    width: 80%;
+    margin-left:10% ;
+    
+    
+}
+
+
+/* Style pour les paragraphes dans le texte supplémentaire */
+.additional-text p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+/* Style pour l'étoile vide */
+.favorite {
+  width: 4%;  /* Ajouter des styles généraux pour l'élément de liste ici, si nécessaire */
+}
+
+.favorite .star-icon {
+    /* Styles pour l'icône étoile */
+    font-size: 20px; /* Ajuster la taille de l'icône étoile */
+    color: gold; /* Changer la couleur si désiré */
+}
+
+.favorite img {
+    /* Styles pour l'image */
+    width: 75px; /* Ajuster la largeur de l'image */
+    height: auto; /* Garder le ratio hauteur/largeur de l'image */
+    margin-top: 3PX;
+}
+
+.svg-map  {
+    height: 60%;
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 15%;
+
+}
+
+
+svg#france {
+    color-scheme: dark light;
+
+  }
+  #france path {
+    stroke-width: 1;
+    stroke: rgb(0, 0, 0);
+  }
+  @media (prefers-color-scheme: dark) {
+    #france path {
+      stroke: rgb(255, 255, 255);
+    }
+  }
+  #INSEE-01 { /* GUADELOUPE */
+    fill: rgb(50, 181, 64);
+  }
+  #INSEE-02 { /* MARTINIQUE */
+    fill: rgb(231, 139, 0);
+  }
+  #INSEE-03 { /* GUYANE */
+    fill: rgb(137, 177, 87);
+  }
+  #INSEE-04 { /* LA REUNION */
+    fill: rgb(224, 104, 9);
+  }
+  #INSEE-06 { /* MAYOTTE */
+    fill: rgb(230, 45, 41);
+  }
+  #INSEE-75 { /* NOUVELLE AQUITAINE */
+    fill: rgb(214, 159, 186);
+  }
+  #INSEE-11 { /* ILE DE FRANCE */
+    fill: rgb(205, 134, 142);
+  }
+  #INSEE-24 { /* CENTRE VAL DE LOIRE */
+    fill: rgb(115, 203, 212);
+  }
+  #INSEE-27 { /* BOURGOGNE FRANCHE COMTE */
+    fill: rgb(147, 134, 188);
+  }
+  #INSEE-28 { /* NORMANDIE */
+    fill: rgb(195, 187, 100);
+  }
+  #INSEE-32 { /* HAUTS DE FRANCE */
+    fill: rgb(72, 187, 169);
+  }
+  #INSEE-44 { /* GRAND EST */
+    fill: rgb(233, 160, 126);
+  }
+  #INSEE-52 { /* PAYS DE LA LOIRE */
+    fill: rgb(146, 205, 175);
+  }
+  #INSEE-53 { /* BRETAGNE */
+    fill: rgb(104, 177, 194);
+  }
+  #INSEE-76 { /* OCCITANIE */
+    fill: rgb(159, 160, 191);
+  }
+  #INSEE-84 { /* AUVERGNE RHONE ALPES */
+    fill: rgb(168, 210, 142);
+  }
+  #INSEE-93 { /* PROVENCE ALPES COTE D AZUR */
+    fill: rgb(248, 196, 120);
+  }
+  #INSEE-94 { /* CORSE */
+    fill: rgb(157, 218, 236);
+  }
+  @media (any-pointer: fine) {
+    @media (prefers-contrast: no-preference) {
+      #france path {
+        opacity: .9;
+      }
+    }
+    @media (prefers-contrast: more) {
+      #france path {
+        opacity: .7;
+      }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      #france path {
+        transition: all .3s;
+      }
+    }
+    #france g path {
+      cursor: pointer;
+    }
+    #france g:hover path {
+      opacity: 1;
+    }
+    #france g:hover path:hover {
+      fill: transparent;
+      stroke: rgb(0, 0, 0);
+    }
+    @media (prefers-color-scheme: dark) {
+      #france g:hover path:hover {
+        stroke: rgb(255, 255, 255);
+      }
+    }
+  }
+  #france g:focus-within path {
+    opacity: 1;
+  }
+  #france g path:focus {
+    fill: transparent;
+    stroke: rgb(0, 0, 0);
+  }
+  @media (prefers-color-scheme: dark) {
+    #france g path:focus {
+      stroke: rgb(255, 255, 255);
+    }
+  }

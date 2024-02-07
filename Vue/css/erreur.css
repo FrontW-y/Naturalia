@@ -1,0 +1,64 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+   background-image: url(https://img.freepik.com/photos-premium/cadre-feuille-verte-arbre-blanc_215497-438.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f3ffe7;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1 {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h2{
+    font-size: 40px;
+    COLOR:#678D72;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+p {
+    color: #666;
+}
+
+main {
+    margin: 3%;
+    background-color: #678D72;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 5%;
+    }
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
+    
+.my-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #678D72; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    margin-top: 3%;
+}
+.image-classe {
+    /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Permet à la hauteur de s'ajuster proportionnellement à la largeur */
+    border: 1px solid #ddd; /* Ajoute une bordure de 1 pixel avec une couleur grise (#ddd) */
+    border-radius: 5px; /* Coins arrondis */
+}

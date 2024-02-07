@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Hailey';
+    src: url('../hailey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
+  
+  
+  nav {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    font-weight: bold;
+    /* Add additional styles if needed */
+}
+
+.h1{
+  font-family: 'Hailey';
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titre {
+  display: block;
+  text-align: center;
+  margin: 0 auto; /* Center the title */
+  font-family: 'Hailey'; 
+  /* Other styles */
+}
+
+  
+    ul {
+      list-style-type: none;
+      margin: 0 auto; /* Centers the list */
+      padding: 30px;
+      overflow: hidden;
+      font-size: 20px;
+      /* Other styles */
+  }
+  
+
+    .icone {
+      position: relative;
+      display: inline-block;
+      margin-top: 50%;
+    }
+  
+  hr{
+  
+    border-top: 2px solid #ffffff;
+  }
+    nav ul li:not(:first-child) {
+      margin-left: 30px; /* Ajoutez la marge gauche souhaitée */
+  
+  }
+    
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  
+    }
+  
+    li a:hover{
+      text-decoration: none;
+      color:#000000
+    }
+    
+  
+  
+  
+  .show {display: block;}
+
+  .auth-links a {
+    float: right;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+
+  
+  
+  
+
+  .feuille {
+    position: flex;
+    bottom: 8px;
+    left: 56px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: -20px auto;
+    font-size: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.feuille::before,
+.feuille::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background: #000;
+}
+
+img {
+    z-index: 1;
+}
+ 
+
+nav ul{
+  margin-left: 21%;
+}
+

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    
+    min-height: 100vh;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  
+        
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
+.container {
+    width: 60%;
+    max-width: 80%; /* Augmentez ou diminuez la largeur selon vos besoins */
+    padding: 20px;
+    margin-top:5%;
+    background-color: #678D72;
+    
+    border-radius: 40px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: 20%;
+    margin-bottom: 20%; 
+}
+
+.logo-text {
+    color:rgb(61, 130, 42);
+    font-size: 30px;
+    font-style: italic;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 2%; /* Ajustez l'espace entre les éléments du formulaire */
+
+    display: flex;
+    flex-direction: column;
+     
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='password'],
+select {
+    width: 60%; /* Le formulaire prendra toute la largeur du conteneur */
+    padding: 10px; /* Ajustez la hauteur des champs selon vos préférences */
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin: 0 auto; /* Pour centrer les champs horizontalement */
+    margin-bottom: 1%; /* Ajustez l'espace entre les champs */
+}
+
+input[type='password'].password-indicator.match,
+input[type='password'].password-indicator.no-match,
+input[type='password'].requirements-valid,
+input[type='password'].requirements-invalid {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #e9d2d2;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.password-requirements {
+    font-size: 14px;
+    color: #FFF;
+    margin-bottom: 15px; /* Ajustez l'espace entre les exigences du mot de passe */
+}
+
+span.required {
+    color: red;
+    margin-left: 2px;
+}
+
+input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+button {
+    width: 30%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #678D72;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.inscription {
+    font-size: 14px;
+    margin-bottom: 2%; /* Ajustez l'espace sous le lien "Connectez-vous ici" */
+    color: #fff;
+}
+
+.inscription span {
+    color: #fff;
+}
+
+/* Le reste de votre CSS personnalisé peut être ajouté ici... */
+
+/* Le reste de votre CSS personnalisé peut être ajouté ici... */
+/* Style pour l'astérisque */
+span.required {
+    color: red;
+    margin-left: 5px;
+}
+
+/* Style pour l'indicateur de mot de passe */
+input[type="password"].password-indicator.match {
+    border: 2px solid green;
+}
+
+input[type="password"].password-indicator.no-match {
+    border: 2px solid red;
+}
+
+input[type="password"].requirements-valid {
+    border: 2px solid green;
+}
+
+/* Style pour l'indicateur de respect des exigences du mot de passe lorsque les exigences ne sont pas respectées */
+input[type="password"].requirements-invalid {
+    border: 2px solid red;
+}
+
+.disabled-button {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

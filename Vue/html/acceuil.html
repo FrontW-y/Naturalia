@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css//headeracceuil.css" />
+        <link rel="stylesheet" type="text/css" href="../css/container3.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <meta charset="utf-8" />
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Accueil - Naturalia</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="titre" href ="../html/acceuil.html">Naturalia</a></li>
+                    <li><a class="active" href="../html/recherche.html">Encyclopédie des espèces</a></li>
+                    <li><a class="active" href="../html/quiz.html">Quiz du jour</a></li>
+                    <li><a class="active" href="../html/ecriture.php">Créer un post</a></li>
+                </ul>
+            </nav>
+            <div class="feuille">
+                <img src="../img/feuille-removebg-preview.png" alt width="70"
+                    height="70">
+            </div>
+        </header>
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Bienvenue</h1>
+                    <br>
+                    <p>
+                        Chez Naturalia,<br>
+                        Notre mission est de vous offrir une fenêtre sur la
+                        richesse et la beauté de toutes les espèces animales,
+                        des plus communes aux plus rares.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="monCarrousel" class="carousel slide"
+                        data-ride="carousel">
+                        <!-- Indicateurs -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#monCarrousel" data-slide-to="0"
+                                class="active"></li>
+                            <li data-target="#monCarrousel"
+                                data-slide-to="1"></li>
+                            <li data-target="#monCarrousel"
+                                data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper pour les slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/margay.png" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <h2>Chat margay</h2>
+                                    <ul class="info">
+                                        <li>Nom français : Chat Margay</li><br>
+                                        <li>Nom scientifique : Leopardus wiedii </li><br>
+                                        <li>Habitat : Terrestre </li><br>
+                                        <li>Territoire : Guyane française</li><br>
+                                        <li>Découvert par : Schinz </li><br>
+                                    </ul>
+                            </div>
+                                                            
+                            <div class="carousel-item">
+                                <p class="invitation_quiz">Testez vos connaissances en participant à notre quiz !</p>
+                                <button type="button" class="quiz" onclick="document.location='../html/quiz.html'">Faire le quiz</button>
+                            </div>
+                        </div>
+
+                        <!-- Contrôles -->
+                        <a class="carousel-control-prev" href="#monCarrousel"
+                            role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#monCarrousel"
+                            role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pour les boutons -->
+            <div class="button-container">
+                <button type="button" class="btn btn-primary" onclick="document.location='../html/connexion.php'">Se connecter</button>
+                <button type="button" class="btn btn-secondary" onclick="document.location='../html/inscription.html'">S'inscrire</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>

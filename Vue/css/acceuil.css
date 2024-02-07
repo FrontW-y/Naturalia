@@ -1,0 +1,171 @@
+/* Réinitialisation de la mise en page par défaut */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+P{
+    font-size: 36px;
+    color: #582905;
+    font-weight: bold;
+}
+  
+  /* Style de la barre de navigation */
+  nav {
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  nav ul li a.active {
+    background-color:#43b334;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  /* Style des liens d'authentification */
+  .auth-links a {
+    text-decoration: none;
+    color: #43b334;
+    font-size: 20px;
+    float: right;
+    font-weight:bold;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style de l'en-tête */
+  
+  .logo {
+  
+    margin-right: 0px; /* Espacement entre le logo et le lien */
+    width: 110px;
+  }
+
+  hr {
+    border: none; /* Supprimez la bordure par défaut du trait horizontal */
+    height: 2px; /* Hauteur du trait horizontal */
+    background-color: #000; /* Couleur du trait horizontal (noir dans cet exemple) */
+    margin: 10px 0; /* Espacement autour du trait horizontal */
+    font-weight: bold; /* Mettre le trait horizontal en gras */
+  }
+  
+  
+  .Naturalia {
+      display: inline-block;
+      font-size: 50px; /* Ajustez la taille de la police selon vos besoins */
+      vertical-align: middle;
+      margin-left: 5px; /* Espacement entre le logo et le texte */
+    
+      /* Couleurs de biodiversité */
+      color: #39803c; /* Une couleur verte par exemple */
+      /* Ajoutez d'autres couleurs de biodiversité au besoin */
+      
+      /* Police adaptée à la biodiversité (exemples) */
+      font-family: "Arial", sans-serif; /* Utilisez une police adaptée, par exemple Arial */
+      /* Ajoutez une police de biodiversité au besoin */
+    }
+  .welcome-message {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-message h1 {
+    font-size: 36px;
+    color:#000000;
+    font-weight: bold;
+  }
+  
+  /* Style du contenu principal */
+  .main-content {
+    padding: 20px;
+  }
+  
+  /* Style des cartes d'espèces */
+  .species-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .species-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .species-card h2 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .species-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Style du pied de page */
+  footer {
+    background-color: #50a576;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-contact, .footer-social, .footer-copyright {
+    margin: 20px;
+  }
+  
+  .footer-contact h3, .footer-social h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact p, .footer-social a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-copyright p {
+    font-size: 16px;
+  }
+  
+  /* Style pour les icônes sociales dans le pied de page */
+  .footer-social a {
+    margin: 0 10px;
+  }
+  
+  /* Style pour l'icône utilisateur */
+  .auth-links span {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  
+  /* Ajoutez d'autres styles CSS ici pour personnaliser davantage votre site web */
+  

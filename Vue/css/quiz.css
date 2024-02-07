@@ -1,0 +1,172 @@
+body {
+    background-color: #D9E6CF;
+    margin: 0; /* Enlever la marge par défaut du body */
+    font-size: 20px; 
+}
+
+
+.start-btn, .info-box, .quiz-box, .AfficherRésultat{
+    position:absolute;
+    padding: 1;
+    top: 60%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255, 0.2),
+                0 6px 20px 0 rgb(0, 0, 0, 0.35);
+    margin:0;
+    padding: 1%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 80%;
+
+}
+
+.buttons {
+    text-align: center; /* Centrer les boutons */
+}
+
+.exit, .start {
+    background-color: #678D72;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.QuizTime {
+    width: 100%; /* Utiliser la largeur maximale disponible */
+    max-width: 400px; /* Définir une largeur maximale pour éviter de devenir trop grand */
+    display: block; /* Pour centrer l'image avec margin: 0 auto; */
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    /* Styles pour les écrans de taille inférieure ou égale à 768px */
+    .QuizTime {
+        width: 80%;
+    }
+
+    .info-box,
+    .quiz-box
+    .AfficherRésultat {
+        width: 90%;
+    }
+}
+
+.quiz-box, .AfficherRésultat {
+    display: none; /* Initialement masqué */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 40%;
+}
+
+.info-list{
+    font-style: italic;
+}
+
+.info-title{
+  justify-content: center;
+  display: flex;
+  color: darkslategrey;
+}
+
+.rule{
+    color: #678D72;
+}
+
+.question{
+    color: #678D72;
+}
+
+.réponses {
+    background: #F1F1F1;
+    border-radius: 10px;
+    margin-top: 3%;
+    font-style: italic;
+    padding: 10px 32px;
+    text-align: initial;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    color: darkgreen;
+}
+
+.réponses:hover {
+    background-color: #6363636b;
+}
+
+.réponses:selected{
+    background-color:#8f8c86;
+}
+
+
+.next, .recommencer, .accueil{
+    background-color: #678D72;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+.résultat{ background-color: #678D72;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 3%;
+}
+
+.gif{
+    width: 150px;
+    position: relative;
+    left: 40%;
+}
+
+.heureux, .neutre, .triste{
+    width:90px;
+    position: relative;
+    left:40%;
+}
+
+p{
+    color:#678D72;
+    text-align: center;
+    font-style: italic;
+}
+
+.bon {
+    color:darkgreen;
+}
+
+.moyen{
+    color:#EBCE42;
+}
+
+.mauvais{
+    color:red;
+}
+
+.espèce {
+    width:40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

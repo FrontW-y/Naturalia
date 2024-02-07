@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Hailey';
+    src: url('./hailey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
+    
+    .titre {
+      display: inline-block;
+      color: #678D72; 
+      font-size: 20px;
+      font-family: 'Hailey'; 
+    }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 30px;
+      overflow: hidden;
+      font-size: 20px;
+      font-weight: bold;
+    
+    }
+  
+  hr{
+  
+    border-top: 2px solid #000;
+  }
+    nav ul li:not(:first-child) {
+      margin-left: 30px; /* Ajoutez la marge gauche souhaitée */
+  
+  }
+    
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  
+    }
+  
+    li a:hover{
+      text-decoration: none;
+      color:#000000
+    }
+    
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 1%;
+    top:10%;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display:block!important;}
+  
+    .auth-links a {
+      float: right;
+    }
+    
+    .auth-links a:hover {
+      text-decoration: underline;
+    }
+  
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-top: 1%;
+  }
+  
+  .search-bar input {
+      padding: 5px;
+      
+  }
+  
+  .message h2{
+    text-align: center;
+    font-family:"";
+    color: darkgreen;
+    font-size: 34px;
+  }
+  
+  .message p{
+    text-align: center;
+    font-family:"";
+    font-size:30px;
+    color: darkgreen;
+  }
+  
+    form {
+      position: relative;
+      margin-top: 4%;
+      background-color: #678D72;
+      padding: 40px 100px;
+      border-radius: 10px;
+      min-width: 300px;
+      margin-left: 400px;
+      margin-right: 400px;
+      border: 2px solid;
+      
+    }
+    
+    
+    
+    form h1{
+      color: #fff;
+      text-align:center;
+    }
+    
+    form .inputs {
+      display: flex;
+      flex-direction: column;
+    }
+    form .inputs input[type='email'], input[type='password']{
+      padding: 15px;
+      border:none;
+      border-radius: 5px;
+      background-color:#f2f2f2;
+      outline:none;
+      margin-bottom: 15px;
+    }
+    form p.inscription{
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    form p.inscription span{
+      color:#fff;
+      
+    }
+    form a.mdp{
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    form button{
+      padding: 15px 2px;
+      border-radius: 5px;
+      border:none;
+      font-size: 15px;
+      color: #fff;
+      background-color:#205732;
+      outline:none;
+      cursor:pointer;
+    }
+    
+    button {
+      width: 30%;
+      padding: 15px 25px;
+      border-radius: 5px;
+      border: medium;
+      font-size: 15px;
+      color: rgb(103, 141, 114);
+      background-color: rgb(255, 255, 255);
+      outline: none;
+      cursor: pointer;
+    }
+
+  

@@ -1,0 +1,103 @@
+.sous-titre {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f3ffe7; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+section {
+    margin-bottom: 2rem;
+    margin-inline-start: 10%;
+}
+
+input[type="date"]{
+    background-color: white;
+    border: 1px solid gray;
+    width: 20%;
+    height: 30px;
+}
+  
+.enregistrer, .modifier{
+    background-color:#678D72 ;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 11px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.imageprofil{
+    float: right;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.encadrement .imageprofil{
+    border: 1px solid #333;
+    padding: 20px; 
+    margin-right: 15%; }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        right: 1%;
+        top:10%;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+    section .textarea{
+        width: 35%;
+        padding: 3px;
+        background-color: white;
+        border:1px solid gray;
+      }
+
+.bouttons{
+    position: relative;
+    left:10%;
+}
+
+.readOnly {
+    background-color: #422d2d;
+}
+
+i {
+    cursor: pointer;
+    font-size:20px;
+}
+

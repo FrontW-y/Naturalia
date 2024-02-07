@@ -1,0 +1,170 @@
+body {
+  background-color: #F3FFE7;
+}
+
+.page-title {
+  Font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2.5em; /* Taille du texte */
+  margin: 20px 0; /* Espacement au-dessus et en dessous du titre */
+  color: #000000; /* Couleur du texte */
+}
+  
+  
+  /* Styles existants pour le carousel */
+  .carousel {
+    position: relative;
+    width: 30%; /* Réduire la largeur du carousel */
+    height: 540px; /* Hauteur ajustée selon vos besoins */
+    overflow: hidden;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Couleur plus foncée pour meilleure visibilité */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 50%; /* Boutons circulaires */  }
+  
+    .prev {
+        left: 10px;
+      }
+      
+      .next {
+        right: 10px;
+      }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Conteneur Flex pour aligner le carousel et la section de texte */
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Styles pour la section de texte */
+  .text-container {
+    width: 65%; /* Augmenter la largeur de la section de texte */
+    padding: 20px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .text-section {
+    font-size: 2em; /* Augmenter la taille de la police */
+    /* Autres propriétés de style restent inchangées */
+  }
+  
+
+  .feedback-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .feedback-container button {
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .feedback-container button:hover {
+    background-color: #ffffff;
+  }
+  
+  .feedback-container p {
+  font-size: 1.2em; /* Taille du texte */
+  color: #000000; /* Couleur du texte */
+  margin-bottom: 10px; /* Espacement avant les boutons */
+}
+
+/* Bouton Pouce Levé */
+#like-btn {
+  background-color: green; /* Couleur verte pour le bouton */
+  border-radius: 30%;
+  /* Autres styles communs aux boutons */
+}
+
+/* Bouton Pouce Vers le Bas */
+#dislike-btn {
+  background-color: red; /* Couleur rouge pour le bouton */
+  border-radius: 30%;
+
+  /* Autres styles communs aux boutons */
+}
+
+/* Styles communs aux deux boutons */
+#like-btn, #dislike-btn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+#like-btn:hover, #dislike-btn:hover {
+  opacity: 0.8; /* Effet au survol pour les deux boutons */
+}
+
+
+.button-title {
+  font-size: 1.5em; /* Taille du texte agrandie */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Police spécifiée */
+  text-align: center;
+  color: #000000; /* Couleur du texte (ajustez selon vos préférences) */
+  border: 2px solid #000000; /* Bordure du cadre */
+  border-radius: 15px; /* Rayon de la bordure pour les coins arrondis */
+  padding: 10px;
+  margin: 20px auto; /* Centrer le titre */
+  max-width: 80%; /* Largeur maximale du titre */
+}
+
+
+.emoji-rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.emoji {
+  position: absolute;
+  top: -100px;
+  font-size: 1.5em;
+  opacity: 0;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -100px; opacity: 1; }
+  100% { top: 100vh; opacity: 0; }
+}
+
+

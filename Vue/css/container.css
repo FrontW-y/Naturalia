@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Hailey';
+    src: url('../hailey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
+  
+ 
+ body {
+    background-image: url('../image/fond3.png'); /* Mettez à jour le chemin d'accès à l'image */
+    background-size: cover; /* S'assure que l'image couvre tout l'arrière-plan */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    background-attachment: fixed; /* L'image de fond reste fixe lors du défilement */
+}
+
+
+/* Style for the container */
+.container {
+    margin-top: 20px;
+}
+
+
+/* Style for the 'Bienvenue' heading */
+.col-md-6 h1 {
+    color: #678D72; /* Change the color */
+    font-family: 'hailey'; /* Change the font family */
+    font-size: 100px; /* Increase the font size */
+    margin-bottom: 15px; /* Adjust the bottom margin */
+    text-align: center; /* Center align the text */
+    font-weight: bold;
+}
+
+/* Style for the text column */
+.col-md-6 {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alignement vertical du contenu de la colonne */
+
+    /* Styles de texte personnalisés */
+    color: #000000; /* Couleur du texte */
+    Font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px; /* Taille de la police */
+    line-height: 1.3; /* Espacement des lignes */
+    text-align: justify; /* Alignement du texte */
+}
+
+
+
+
+/* Style for the carousel */
+.carousel {
+    width: 100%;
+    height: 300px; /* Assure une forme carrée */
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Bordure optionnelle */
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 3px #678D72; /* Ajoute une ombre portée */
+}
+
+.carousel-item {
+    height: 300px; /* Hauteur fixe pour les éléments du carrousel */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cela garantit que les images couvrent tout l'espace disponible sans perdre leurs proportions */
+}
+
+/* Appliquez Flexbox au conteneur parent de la colonne de texte et du carrousel */
+.row {
+    display: flex;
+    align-items: center; /* Alignement vertical des enfants */
+}
+
+.button-container {
+    text-align: center; /* Centre les boutons */
+    margin-top: 20px; /* Espace au-dessus des boutons */
+    margin-bottom: 20px; /* Espace en dessous des boutons */
+}
+
+.button-container .btn {
+    font-size: 20px; /* Ajustez la taille de la police pour agrandir le texte du bouton */
+    padding: 15px 30px; /* Agrandit le bouton en augmentant le padding */
+    border-radius: 10px; /* Bords arrondis pour un style plus doux */
+    margin: 10px;
+}
+
+.button-container .btn-primary {
+    background-color: #678D72; /* Couleur verte pour le bouton primaire */
+    color: #ffffff; 
+}
+
+.button-container .btn-secondary {
+    background-color: #678D72; /* Couleur rouge pour le bouton secondaire */
+    color: #ffffff; 
+}
+
+.button-container .btn-primary:hover {
+    background-color: #AEB79D; /* Couleur de fond au survol pour le bouton primaire */
+    /* Vous pouvez également changer la couleur du texte si nécessaire */
+}
+
+.button-container .btn-secondary:hover {
+    background-color: #AEB79D; /* Couleur de fond au survol pour le bouton secondaire */
+    /* Vous pouvez également changer la couleur du texte si nécessaire */
+}
+

@@ -1,0 +1,30 @@
+.footer {
+    background-color: #f5f5f5; /* Modifier selon la couleur de fond souhaitée */
+  }
+  
+  .footer h5 {
+    color: #000; /* Modifier selon la couleur du texte souhaitée */
+    margin-bottom: 20px;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .footer ul li a {
+    color: #999; /* Modifier selon la couleur des liens souhaitée */
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer img {
+    margin: 0 10px; /* Espace entre les logos */
+    height: 50px; /* Hauteur des logos, à ajuster si nécessaire */
+  }
+  
+  /* Ajouter plus de styles pour la responsivité si nécessaire */
+  

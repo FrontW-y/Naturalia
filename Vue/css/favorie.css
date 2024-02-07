@@ -1,0 +1,62 @@
+/* Ajoutez ceci si ce n'est pas déjà présent dans votre CSS pour supprimer la marge par défaut du body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  /* Assurez-vous que le header n'a pas de marge ou de bordure inférieure qui pourrait ajouter un espace */
+  margin-bottom: 0;
+  /* Reste de votre CSS pour le header */
+}
+
+.favorites-section {
+  text-align: center;
+  margin-top: 0; /* Supprime l'espace au-dessus du titre */
+  padding-top: 20px; /* Vous pouvez ajuster cette valeur pour positionner le titre comme souhaité */
+  /* Reste de votre CSS pour .favorites-section */
+}
+
+
+.favorites-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0; /* Aucun espace au-dessus du titre */
+  margin-bottom: 0; /* Aucun espace en dessous du titre */
+  font-size: 2em;
+  color: #333;
+}
+
+.favorites-icon {
+  display: block; /* L'icône est affichée sur sa propre ligne */
+  margin: 0 auto; /* Centre l'icône horizontalement sans espace au-dessus */
+  width: 300px; /* La largeur souhaitée pour l'icône */
+  height: 300px; /* La hauteur souhaitée pour l'icône, peut être égale à la largeur pour maintenir le ratio */
+}
+
+.favorites-icon img {
+  width: 100%; /* L'image occupe 100% de la largeur du conteneur .favorites-icon */
+  height: auto; /* La hauteur est ajustée automatiquement pour maintenir le ratio de l'image */
+  display: block; /* Empêche les espaces blancs sous l'image */
+  margin-bottom: 0; /* Aucun espace en dessous de l'image */
+}
+
+
+
+
+
+.favorites-button {
+  background-color: #678D72; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.favorites-button:hover {
+  background-color: #000000; /* Button hover state color */
+}

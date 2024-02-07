@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    ErrorDocument 404 /SAE/Vue/html/ERREUR.html
+</IfModule>

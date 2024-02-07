@@ -1,0 +1,58 @@
+/* Styles pour la page de conditions légales avec un thème de biodiversité */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+   background-color: #fff;
+     /* Une couleur neutre */
+}
+
+h4{
+     /* Une couleur verte associée à la nature */
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+    font-style:italic;
+    font-weight:bold;
+    font-size : 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top:1%;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f3ffe7; /* Arrière-plan blanc */
+    border-radius: 10px; /* Coins arrondis pour rappeler la douceur de la nature */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #678D72; /* Couleur verte pour les titres */
+}
+
+p {
+    font-size: 1rem;
+    color: #333; /* Couleur de texte plus sombre */
+}
+
+footer {
+    background-color: #FFF;
+    /* Une couleur verte pour le pied de page */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Ajoutez d'autres styles CSS au besoin */

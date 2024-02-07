@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.friend-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.friend-card {
+    background: #f3ffe7;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 200px;
+}
+
+.friend-header {
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+}
+
+.friend-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.friend-info h2 {
+    margin: 10px 0 5px;
+}
+
+.friend-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.status, .view-libraries-button, .add-friend-button, .send-message-button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.view-libraries-button:hover, #searchFriendButton:hover {
+    background-color: #678D72;
+}
+
+/* Specific backgrounds for each person */
+/* (Your existing image backgrounds here) */
+
+h2 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.search-add-friend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+}
+
+#searchFriendInput {
+    padding: 10px;
+    margin-right: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+#searchFriendButton {
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: #678D72;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.imageprofil {
+    float: right;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.encadrement .imageprofil {
+    border: 1px solid #333;
+    padding: 14px;
+    margin-right: 15%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .friend-container {
+        justify-content: space-around;
+    }
+
+    .friend-card {
+        width: 45%; /* Adjust width for medium screens */
+    }
+
+    .search-add-friend {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #searchFriendInput, #searchFriendButton {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .imageprofil {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .friend-card {
+        width: 90%; /* Adjust width for small screens */
+    }
+
+    .friend-info h2, .friend-info p {
+        font-size: 0.8em; /* Adjust font size for readability */
+    }
+
+    .imageprofil {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .encadrement .imageprofil {
+        margin: 0 auto;
+    }
+}

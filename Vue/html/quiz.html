@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/quiz.css" />
+    <script src="../js/quiz.js"></script>
+
+    <title>Quiz</title>
+</head>
+<body>
+    <img class="QuizTime" src="../img/Naturalia (3).png" ><br><br>
+    <div class="info-box" id="info-box">
+        <div class="info-title"><strong>Consignes</strong></div> <hr>
+        <div class="info-list">
+            <div class="rule">Répondez aux questions à choix multiples et rapporter un maximum de points !</div>
+            <div class="rule">Attention.. Il n'y a qu'une seule bonne réponse possible. </div> 
+            <img class ="gif" src="../img/giphy.gif" >
+            
+        </div>
+        <hr>
+        <div class="buttons">
+            <button class="exit">Retour vers la page d'accueil</button>
+            <button class="start" onclick="showQuiz()">Commencer le test</button>
+        </div>
+    </div>
+
+    <div class="quiz-box" id="quiz-box">
+        <section>
+            <div class="question" id="question-container">
+                <!-- Le texte de la question sera remplacé dynamiquement -->
+            </div>
+            <hr>
+            <img class="espèce" src="../img/margay.png">
+            <div class="answers">
+                <button class="réponses" onclick="selectAnswer(a)">a. Poisson</button>
+                <button class="réponses" onclick="selectAnswer(b)">b. Dauphin</button>
+                <button class="réponses" onclick="selectAnswer(c)">c. Renard</button>
+
+            </div>
+            <hr>
+            <div class ="buttons">
+            <button class="next" onclick="nextQuestion()">Question suivante</button>
+        </div>
+        </section>    
+    </div>
+
+    <div class="AfficherRésultat" id="résultat-box">
+        <!-- Cet élément affichera les résultats -->
+        <div class="info-title"><strong>Résultat</strong></div> <hr>
+        <p>Le quiz est terminé ! Votre score est de <span id="scoreFinale"></span>/5</p>
+        <div class="BonScore" id="BonScore">
+            <img class="heureux" src="../img/heureux.png" id="heureux">
+            <p class="Bon">Bien joué !</p>
+        </div>
+
+        <div class="ScoreNeutre" id="ScoreNeutre">
+            <img class="neutre" src="../img/neutre.png" id="neutre">
+            <p class="moyen">C'est un bon début, mais vous pouvez encore progresser !</p>
+        </div>
+
+        <div class="MauvaisScore" id="MauvaisScore">
+            <img class="triste" src="../img/triste.png" id="triste">
+            <p class="mauvais"> Dommage, n'hésitez pas à relire l'info du jour et à recommencer le test pour augmenter votre score !</p>
+        </div>
+
+<hr>
+<div class="buttons">
+    <button class="accueil" onclick="document.location='../html/acceuil.html'">Retour vers la page d'accueil</button>
+</div>
+    </div>
+    
+
+</body>
+</html>
